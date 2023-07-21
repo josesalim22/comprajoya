@@ -10,32 +10,32 @@ function comprar() {
   if (realizaCompra == "SI" || realizaCompra == "si" || realizaCompra == "Si") {
     /* Aqui realizo el while para sumar los productos */
     let total = 0;
-    let producto = prompt("Ingrese un número del 1 al 4 para seleccionar su producto o el número 0 para finalizar.\n-> 1: Anillo de oro - $ 5500\n-> 2: Aros de oro - $ 3750\n-> 3: Dije de plata - $ 2780\n-> 4: Pulsera de plata - $ 2860\n-> 0: SALIR");
+    let producto = prompt("Ingrese un número del 1 al 4 para seleccionar su producto o el número 0 para finalizar.\n-> 1: Anillo de oro - $ 52500\n-> 2: Aros de oro - $ 21200\n-> 3: Dije de plata - $ 7500\n-> 4: Pulsera de plata - $ 15300\n-> 0: SALIR");
 
     //Repetimos hasta que se ingresa "0"
     while (producto != 0) {
       switch (producto) {
         case "1":
-          total += 5500;
+          total += 52500;
           alert("Anillo de oro sumado");
           break;
         case "2":
-          total += 3750;
+          total += 21200;
           alert("Aros de oro sumado");
           break;
         case "3":
-          total += 2780;
+          total += 7500;
           alert("Dije de plata sumado");
           break;
         case "4":
-          total += 2860;
+          total += 15300;
           alert("Pulsera de plata sumada");
           break;
         default:
           alert("El codigo no existe, por favor ingrese un número del 0 al 4")
           break;
       }
-      producto = prompt("Ingrese un número del 1 al 4 para seleccionar su producto o el número 0 para finalizar.\n-> 1: Anillo de oro - $ 5500\n-> 2: Aros de oro - $ 3750\n-> 3: Dije de plata - $ 2780\n-> 4: Pulsera de plata - $ 2860\n-> 0: SALIR");
+      producto = prompt("Ingrese un número del 1 al 4 para seleccionar su producto o el número 0 para finalizar.\n-> 1: Anillo de oro - $ 52500\n-> 2: Aros de oro - $ 21200\n-> 3: Dije de plata - $ 7500\n-> 4: Pulsera de plata - $ 15300\n-> 0: SALIR");
     }
     if (total != 0) {
       alert(`El total de su compra es $${total}. ${nombre} gracias por visitarnos. Regresa pronto`);
